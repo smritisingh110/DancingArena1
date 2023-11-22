@@ -1,0 +1,325 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    width: 100%;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* This makes the background image fixed */
+    position: relative; /* Create a stacking context */
+}
+
+header {
+    position: fixed;  /* Make the header fixed */
+    top: 0;           /* Position it at the top of the viewport */
+    width: 100%;      /* Take up the full width of the viewport */
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.logo img {
+    height: 40px;
+    width: 120px;
+   
+}
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    padding: 5px;
+    max-width: 27px; /* Set the maximum width of the social media icons */
+}
+
+#emid img{
+    max-width: 50px;
+    max-height: 50px;
+}
+#fb img{
+    max-width: 30px;
+    max-height: 30px;
+}
+#yt img{
+    height: 25px;
+    width: 60px;
+}
+#emid{
+    padding-right: 40px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1c1818;
+    font-weight: bold;
+}
+
+.background {
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* This makes the background image fixed */
+    position: relative; /* Create a stacking context */
+}
+
+.background1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('th.png'), url('th2.jpg'), url('th3.jpg'), url('th4.jpg');
+    background-size: 100% auto;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    animation: animatedBackground 10s linear infinite;
+}
+.sub {
+    background-color:rgba(238, 238, 244, 0.5);/* Background color with opacity */
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#ph {
+    color: #ea0b0b; /* Text color */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+/* Add this CSS to your existing styles.css file or create a new one */
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Adjust margin as needed */
+  }
+  
+  .dance-styles,
+  .dance-courses {
+    background-color: rgba(255, 255, 255);
+    width: 48%; /* Adjust width as needed, leaving some space for margins and gaps */
+  }
+  
+  .dance-styles table,
+  .dance-courses table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+  }
+  
+  .dance-styles .dropmenu-heading,
+  .dance-courses .dropmenu-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dance-styles img,
+  .dance-courses img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .dance-styles p,
+  .dance-courses p {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  
+.dance-styles a,
+.dance-courses a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dance-styles a:hover,
+.dance-courses a:hover {
+  text-decoration: underline;
+  color: #333; /* Adjust the hover color as needed */
+}
+  
+  .dance-styles td,
+  .dance-courses td {
+    padding: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to table cells */
+  .dance-styles td:hover,
+  .dance-courses td:hover {
+    transform: scale(1.05);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff3300;
+}
+.sech2{
+    font-size: 2rem;
+}
+.abt,.cls,.cnt{
+    display: block; /* Set it as a block-level element */
+    width: 100%; 
+    margin: 20px;
+    background-color: rgba(238, 238, 244,0.7);
+    padding: 20px;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+
+
+}
+.cls{
+    background-color: rgba(238, 238, 244, 0.6);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cnt{
+    background-color: rgba(3, 3, 8, 0.9);
+    color:rgba(238, 238, 244, 0.6);
+    position: absolute;
+   margin-bottom: 50px;
+}
+.con{
+    text-align: justify;
+    padding-left:50px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #131212; /* Set text color for the footer */
+    padding: 10px; /* Add padding to provide spacing within the footer */
+    text-align: right; /* Center the text within the footer */
+    z-index: 999; /* Ensure it appears above other content when scrolling */
+}
+/* Add more styles for other sections as needed */
+
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+aboutus-main {
+    background: url(../images/aboutus-background-with.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 80px 0 50px 0;
+}
+
+.aboutus-detail,.cls {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center content within the div */
+}
+
+.aboutusLeftcontent,.aboutusrightContent,.aboutus-leftcontent {
+ 
+    padding-left: 100px;
+    padding-right: 100px;
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Add padding as needed */
+}
+.aboutus-leftcontent,.aboutus-leftImage,.aboutusLeftcontent{
+    margin-left: 50px;
+}
+.aboutus-rightimage,.aboutusrightContent{
+    margin-right: 100px;
+}
+.aboutus-rightimage,.aboutus-leftImage {
+
+   
+    flex: 1; /* Take up available space */
+    text-align: right; /* Align content to the right */
+}
+
+.containers img{
+    width: 100px;
+    height: 200px;
+}
+
+.wave-footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-container {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a; /* Adjust the background color as needed */
+    color: #ffffff; /* Adjust the text color as needed */
+}
+
+.wave-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+
+
