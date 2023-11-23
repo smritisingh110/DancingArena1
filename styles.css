@@ -1,25 +1,25 @@
 /* Reset some default browser styles */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-}
 
 /* Global styles */
+*{
+    color: #000;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url("th.png") ;
     line-height: 1.6;
-    width: 100%;
-    background-image: url('th.png');
+    width: 100%; 
+    color:#000 ;
+    position: relative; /* Create a stacking context */
     background-size: cover;
     background-attachment: fixed; /* This makes the background image fixed */
-    position: relative; /* Create a stacking context */
+    background-color: rgba(255, 255, 255,0.5);
 }
 
 header {
     position: fixed;  /* Make the header fixed */
-    top: 0;           /* Position it at the top of the viewport */
-    width: 100%;      /* Take up the full width of the viewport */
+    top: 0;  
+    width: 100%;         /* Position it at the top of the viewport */
     z-index: 5;
     display: flex;
     justify-content: space-between;
@@ -71,9 +71,7 @@ nav ul li a {
 }
 
 .background {
-    background-color:rgba(238, 238, 244, 0.5);/* Background color with opacity */
     height: 100vh; /* Adjust the height as needed */
-    background-image: url('th.png');
     background-size: cover;
     background-attachment: fixed; /* This makes the background image fixed */
     position: relative; /* Create a stacking context */
@@ -91,7 +89,6 @@ nav ul li a {
 
 h1 {
     font-size: 3rem;
-    color: black;
 }
 
 .container1 {
@@ -138,7 +135,6 @@ h1 {
 .dance-styles a,
 .dance-courses a {
   text-decoration: none;
-  color: black;
   display: block;
 }
 
@@ -180,25 +176,20 @@ h1 {
 }
 .abt,.cls,.cnt{
     display: block; /* Set it as a block-level element */
-    width: 100%; 
-    margin: 20px;
-    background-color: rgba(238, 238, 244,0.7);
+    width: 90%; 
+    margin-top: 20px;
     padding: 20px;
-    color: #000;
     text-align: center;
 
 
 }
 .cls{
-    background-color: rgba(238, 238, 244, 0.6);
     display: flex;
     justify-content: center;
     
 }
 
 .cnt{
-    background-color: rgba(3, 3, 8, 0.9);
-    color:rgba(238, 238, 244, 0.6);
     position: absolute;
    margin-bottom: 50px;
 }
@@ -210,7 +201,7 @@ h1 {
 footer{
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     color: #131212; /* Set text color for the footer */
     padding: 10px; /* Add padding to provide spacing within the footer */
     text-align: right; /* Center the text within the footer */
@@ -258,7 +249,6 @@ footer{
     z-index: 2;
     padding: 20px;
     text-align: center;
-    background-color: rgb(26, 26, 26,0.1) ;/* Adjust the background color as needed */
 }
 
 .wave-svg {
@@ -275,8 +265,8 @@ footer{
 {
     display: none;
     position: absolute;
-    left: 5%;
-    top: 15px;
+    left: 2%;
+    top: 5px;
     align-items: left;
     padding: 1%;
     margin: auto;
@@ -288,67 +278,83 @@ footer{
     height: 3px;
     margin: 5px 5px;
 }
-@media only screen and (max-width: 1220px) 
-{
+@media only screen and (max-width: 1220px) {
+    header {
+        flex-direction: column;
+    }
+    .container1,.dance-courses{
+        align-items: center;
+    }
+    .burger {
+        display: block;
+    }
 
+    nav ul {
+        flex-direction: column;
+    }
 
-header {
-    flex-direction: column;
-}
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
 
-.burger{
-    display: block;
-}
+    }
 
-nav ul {
-    flex-direction: column;
-}
+    .background {
+        width: 100%;
+        background-size: auto;
+        background-attachment: fixed;
+        position: relative;
+    }
 
-.container1 {
-    display: flex;
-    flex-direction: column; /* Adjust layout for better mobile display */
-    margin: 20px;
-}
+    .sub {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-.head{
+    h1 {
+        font-size: 2rem;
+    }
+
+    body {
+        align-items: center;
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .dance-courses {
+        align-items: left;
+    }
+
+    .dance-styles {
+        align-items: right;
+    }
+
+    .dance-styles,
+    .dance-courses {
+        background-color: rgba(28, 27, 27, 0);
+      
+    }
+
+    .head{
+        height: 72px;
+    }
     
-    height: 75px;
-}
-.visibility-class{
-    opacity: 0;
-}
-
-
-.background {
-     padding: 20%;
-     margin: 10%;
-    background-size: auto;
-    background-attachment: fixed; /* This makes the background image fixed */
-    position: relative; /* Create a stacking context */
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-body{
-    align-items: center;
-}
-
-.container1 {
-    display: flex;
-    justify-content: center;
-    margin: 20px; /* Adjust margin as needed */
-  }
-  .dance-courses{
-    align-items: left;
-  }
-  .dance-styles{
-    align-items: right;
-  }
-  .dance-styles,
-  .dance-courses {
-    background-color: rgba(28, 27, 27, 0);
-    width: 20%; /* Adjust width as needed, leaving some space for margins and gaps */
-  }
+    .visibility-class{
+        display: none;
+    }
+    .containers img{
+        width: 100px;
+        height: 30px;
+    }
+    .aboutus-detail{
+        display: block;
+        align-items: center;
+    }
 }
